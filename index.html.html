@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaly Coulibaly | Carte Digitale</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bleu-nuit: #0a192f;
+            --beige: #f5f5dc;
+            --jaune-or: #d4af37;
+            --card-bg: rgba(10, 25, 47, 0.9);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            background:
+            linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)),
+            url('images/ami-fruite.jpg');
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+            color: var(--beige);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+
+            background: var(--card-bg);
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+
+            text-align: center;
+
+            border: 1px solid var(--jaune-or);
+
+            margin: 20px 0;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+
+            border-radius: 50%;
+            object-fit: cover;
+
+            border: 3px solid var(--jaune-or);
+
+            box-shadow: 0 0 15px var(--jaune-or);
+        }
+
+        h1 {
+            margin: 15px 0 5px;
+            font-size: 1.6rem;
+            color: var(--jaune-or);
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: var(--beige);
+            opacity: 0.8;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            width: 100%;
+            margin-bottom: 20px;
+
+            border-radius: 12px;
+            overflow: hidden;
+
+            border: 1px solid var(--jaune-or);
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 14px;
+
+            text-decoration: none;
+
+            color: var(--bleu-nuit);
+
+            background: var(--jaune-or);
+
+            border-radius: 10px;
+
+            transition: all 0.3s ease;
+
+            font-weight: bold;
+
+            text-transform: uppercase;
+
+            font-size: 0.9rem;
+        }
+
+        .link-item i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .link-item:hover {
+            transform: translateY(-3px);
+
+            background: var(--beige);
+
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        h3 {
+            margin-top: 30px;
+
+            color: var(--jaune-or);
+
+            font-size: 1.1rem;
+
+            border-bottom: 1px solid var(--jaune-or);
+
+            display: inline-block;
+
+            padding-bottom: 5px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 12px;
+
+            margin-top: 20px;
+        }
+
+        .portfolio-grid img {
+            width: 100%;
+            height: 100px;
+
+            object-fit: cover;
+
+            border-radius: 8px;
+
+            border: 1px solid rgba(212, 175, 55, 0.3);
+
+            transition: 0.3s;
+        }
+
+        .portfolio-grid img:hover {
+            border-color: var(--jaune-or);
+
+            transform: scale(1.05);
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- PHOTO -->
+    <img src="images/logo-gieami.jpg.jpg" alt="Bengaly Coulibaly" class="profile-img">
+
+    <!-- NOM -->
+    <h1>Bengaly Coulibaly</h1>
+
+    <!-- PROFESSION -->
+    <p>Directeur des Achats</p>
+
+    <!-- BOUTONS ACTION -->
+    <div class="action-buttons">
+
+        <!-- APPELER -->
+        <a href="tel:+22365550446" class="link-item">
+            <i class="fas fa-phone"></i>
+            Appeler
+        </a>
+
+        <!-- ENREGISTRER CONTACT -->
+        <a href="bengaly-contact.vcf" download class="link-item">
+            <i class="fas fa-user-plus"></i>
+            Enregistrer Contact
+        </a>
+
+    </div>
+
+    <!-- VIDEO -->
+    <div class="video-container">
+
+        <div class="video-container">
+        <iframe width="100%" height="300" src="https://gieami.net/?utm_source=chatgpt.com.mp4 type="videos/mp4"" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
+    </div>
+
+    <!-- RESEAUX -->
+    <div class="links-container">
+
+        <a href="https://wa.me/22365550446" class="link-item">
+            <i class="fab fa-whatsapp"></i>
+            WhatsApp
+        </a>
+
+        <a href="https://linkedin.com/in/" class="link-item">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+        </a>
+
+        <a href="https://instagram.com/" class="link-item">
+            <i class="fab fa-instagram"></i>
+            Instagram
+        </a>
+
+    </div>
+
+    <h3>GALERIE</h3>
+    <div class="portfolio-grid">
+        <img src="images/116134737_908516199647984_2609802331308053715_n.jpg" alt="AMI FRUITE">
+        <img src="images/98003214_855839768248961_7615231935001919488_n.jpg" alt="DIAGO">
+    </div>
+</div>
+
+</body>
+</html>
